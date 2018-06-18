@@ -1,0 +1,184 @@
+{
+"name":"UNHCR Power BI Theme",
+"dataColors":
+["#0072BC", "#18375F", "#00B398", "#EF4A60", "#F6C307", "#FAEB00", "#000000", "#1D1D1B"],
+"background":"#FFFFFF",
+"foreground":"#000000",
+"tableAccent":"#ffffff",
+
+"visualStyles":{
+        "*":{
+            "*":{
+                "*":[{
+                    "responsive":true,
+				            "wordWrap":true,
+					          "fontFamily":"Arial"
+                     }],
+                    "labels":[{
+                              "show":false,
+                              "labelOrientation":"vertical"
+                              }],
+                    "categoryAxis":[{
+                              "showAxisTitle":false
+                              }],
+                    "valueAxis":[{
+                              "showAxisTitle":false
+                               }]
+		             }
+	            },
+	    "scatterChart":{
+		             "*":{
+			                "fillPoint":[{
+				                          "show":true
+				                          }]
+		                }
+	                  },
+		"lineChart":{
+            "*":{
+                "legend":[{
+                          "legendMarkerRendering":"lineAndMarker"
+                }],
+                "lineStyles":[{
+                            "showMarker":false,
+                            "showSeries":true
+                              }],
+				        "labels": [{
+                            "show": false
+                           }],
+                "dataLabels": [{
+                            "show": false
+                            }]
+                }
+             },
+		 "barChart": {
+            "*": {
+                "labels": [{
+                        "show": true
+                    }],
+                "dataLabels": [{
+                        "show": false
+                    }],
+                "categoryAxis": [{
+                        "axisType": "Categorical"
+                    }]
+            }
+        },
+		"slicer": {
+              "*": {
+                "responsive":false,
+                "selection": [
+                  {
+                    "singleSelect": false,
+                    "selectAllCheckboxEnabled": false
+                  }
+                ],
+                "header": [
+                  {
+                    "show": true
+                  }
+                ]
+              }
+        },
+		 "pivotTable": {
+            "*": {
+                "*":[{
+                    "fontSize":9,
+					          "fontColor":"#000000"
+                     }],
+                "grid": [{
+                        "outlineColor": { "solid": { "color": "#ffffff" } }
+                         }],
+                "subTotals": [{
+                        "columnSubtotals": false
+                            }],
+                "columnHeaders": [{
+						                    "wordWrap":true ,
+						                    "backColor": "#0072BC",
+						                    "gridVerticalWeight":3,
+						                    "stepped":true,
+						                    "steppedLayoutIndentation":25,
+						                    "urlIcon":true
+                                }],
+				         "values": [{
+						              "fontColorPrimary":"#000000",
+						              "backColorPrimary":"#ffffff",
+						              "fontColorSecondary":"#000000",
+						              "backColorSecondary":"#E5E5E5",
+						              "wordWrap":true,
+						              "urlIcon":true
+                            }],
+                "rowHeaders": [{
+						                  "wordWrap":true ,
+						                  "backColor": "#0072BC",
+						                  "gridVerticalWeight":3,
+						                  "stepped":true,
+						                  "steppedLayoutIndentation":25,
+						                  "urlIcon":true
+                              }]
+                      }
+                  },
+		"kpi": {
+            "*": {
+                "status": [{
+						            "direction": "Negative",
+                        "goodColor": { "solid": { "color": "#0072BC" } },
+                        "badColor": { "solid": { "color": "#EF4A60" } },
+                        "neutralColor": { "solid": { "color": "#CCCCCC" } }
+                          }]
+                }
+            },
+        "card":{
+            "*":{
+                "labels":[{
+                        "fontSize":10
+                          }],
+                "categoryLabels":[{
+                                  "fontSize":9
+                                  }]
+               }
+              },
+		 "clusteredBarChart": {
+                       "*": {
+                            "labels": [{
+                                    "fontSize": 10
+                                        }],
+                            "categoryLabels": [{
+                                              "show": true
+                                              }],
+                            "categoryAxis": [{
+                                            "axisType": "Categorical"
+                                              }]
+                             }
+                           },
+        "areaChart": {
+                    "*": {
+                        "labels": [{
+                                "show": false
+                            }],
+                        "dataLabels": [{
+                                "show": false
+                            }]
+                          }
+                      },
+        "donutChart":{
+                    "*":{
+                        "legend":[{
+                            "show":true
+                        }],
+                        "labels":[{
+                            "labelStyle": "Percent of total"
+                        }]
+                    }
+                },
+        "pieChart":{
+                  "*":{
+                      "legend":[{
+                          "show":true
+                      }],
+                      "labels":[{
+                          "labelStyle": "Category, percent of total"
+                      }]
+                  }
+       }
+    }
+ }
